@@ -7,9 +7,20 @@
 
     //ENTRADA
 
+    const n = Number(prompt(`Informe um número:`))
     
     //PROCESSAMENTO
 
+    switch (n % 2) {
+        case 0:
+            alert(`É par`)
+            break;
+    case 1:
+        alert(`É ímpar`)
+        default:
+            alert(`Dados Inválidos`)
+            break;
+    }
     
     //SAÍDA
 
