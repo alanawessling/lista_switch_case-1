@@ -13,9 +13,95 @@
 
     //ENTRADA
 
-    
+    const p1 = prompt(`Telefonou para a vítima? (S-sim ou N-não)`).toUpperCase();
+    const p2 = prompt(`Esteve no local do crime? (S-sim ou N-não)`).toUpperCase();
+    const p3 = prompt(`Mora perto da vítima? (S-sim ou N-não)`).toUpperCase();
+    const p4 = prompt(`Devia para a vítima (S-sim ou N-não)?`).toUpperCase();
+    const p5 = prompt(`Já trabalhou com a vítima? (S-sim ou N-não)`).toUpperCase();
+
     //PROCESSAMENTO
 
+    let mensagem = 0;
+
+    switch (p1) {
+        case `S`:
+            mensagem++;
+            break;
+
+        case `N`:
+            break;
+        default:
+            alert(`Dados inválidos! (S-sim ou N-não)`);
+            break;
+    }
+    switch (p2) {
+        case `S`:
+            mensagem++;
+            break;
+
+        case `N`:
+            break;
+        default:
+            alert(`Dados inválidos! (S-sim ou N-não)`);
+            break;
+    }
+    switch (p3) {
+        case `S`:
+            mensagem++;
+            break;
+
+        case `N`:
+            break;
+        default:
+            alert(`Dados inválidos! (S-sim ou N-não)`);
+            break;
+    }
+    switch (p4) {
+        case `S`:
+            mensagem++;
+            break;
+
+        case `N`:
+            break;
+        default:
+            alert(`Dados inválidos! (S-sim ou N-não)`);
+            break;
+    }
+    switch (p5) {
+        case `S`:
+            mensagem++;
+            break;
+
+        case `N`:
+            break;
+        default:
+            alert(`Dados inválidos! (S-sim ou N-não)`);
+            break;
+    }
+
+    switch (mensagem) {
+        case 0:
+        case 1:
+            alert(`Inocente`);
+            break;
+
+        case 2:
+            alert(`Suspeito`);
+            break;
+
+        case 3:
+        case 4:
+            alert(`Cúmplice`);
+            break;
+
+        case 5:
+            alert(`Assasino`);
+            break;
+
+        default:
+            alert(`Dados Inválidos!`);
+            break;
+    }
 
     //SAÍDA
 
